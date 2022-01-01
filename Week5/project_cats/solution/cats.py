@@ -236,7 +236,7 @@ def fastest_words(game):
     "*** YOUR CODE HERE ***"
     fastest_words = [[] for _ in player_indices]
     for i_word in word_indices:
-        print("DEBUG:", )
+        #print("DEBUG:", )
         fast_player = min([i_player for i_player in player_indices], key = lambda i: time(game, i, i_word))
         fastest_words[fast_player].append(word_at(game, i_word))
     return fastest_words
